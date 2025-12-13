@@ -1,11 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Victor's Todo List</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="todoheader">
+        <div class="leftSide">
+          <img
+            src="./images/80.png"
+            alt="Logo"
+            width="40"
+            style="border-radius: 30%"
+          />
+          <h3>Victors Todo</h3>
+        </div>
+        <div class="rightSide">
+          <button class="controlBTN lightDark">☀️</button>
+          <button class="controlBTN clearBTN">Clear Completed</button>
+          <button class="controlBTN exportBTN">Export</button>
+          <button class="controlBTN importBTN">Import</button>
+        </div>
+      </div>
+      <div class="taskinput">
+        <input
+          type="text"
+          class="inputEl"
+          placeholder="Add a new task & press enter"
+        />
+        <button class="controlBTN addBTN">Add</button>
+      </div>
+      <div class="tasksparent">
+        <div class="taskchild">
+          <div class="taskLeftSide">
+            <input type="checkbox" />
+            <p>Test Task</p>
+          </div>
+          <div class="taskRightSide">
+            <button class="controlBTN editbutton">✎</button>
+            <button class="controlBTN deletebutton">🗑</button>
+          </div>
+        </div>
+
+        <div class="taskchild">
+          <div class="taskLeftSide">
+            <input type="checkbox" />
+            <p class="done">Test Task</p>
+          </div>
+          <div class="taskRightSide">
+            <button class="controlBTN editbutton">✎</button>
+            <button class="controlBTN deletebutton">🗑</button>
+          </div>
+        </div>
+      </div>
+      <div class="taskfooter">
+        <div class="footerinfo">
+          <p style="color: gray; font-size: 12px;">
+            <span class="tasknumber">0</span>
+            active •
+            <span class="totaltasks">45</span>
+            total
+          </p>
+        </div>
+        <div class="tabsbuttons">
+            <button class="controlBTN tabBTN">All</button>
+            <button class="controlBTN tabBTN">Active</button>
+            <button class="controlBTN tabBTN">Completed</button>
+        </div>
+        <p style="color: gray; font-size: 12px;">Tip: double-click a task to edit it</p>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
 </html>
