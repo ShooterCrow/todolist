@@ -112,6 +112,15 @@ body {
   align-items: center;
 }
 
+.tab1, .tab2, .tab3 {
+    display: none;
+}
+
+.showTab {
+    display: block !important;
+}
+
+
 @media (max-width: 640px) {
   .container {
     min-width: 300px;

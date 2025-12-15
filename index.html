@@ -33,32 +33,32 @@
         />
         <button class="controlBTN addBTN">Add</button>
       </div>
-      <div class="tasksparent">
-        <div class="taskchild">
+      <!-- Tab One for All Tasks -->
+      <div class="tasksparent tab1">
+        <p>No Tasks Available at The mMoment</p>
+        <!-- <div class="taskchild">
           <div class="taskLeftSide">
             <input type="checkbox" />
-            <p>Test Task</p>
+            <p>Tab 1</p>
           </div>
           <div class="taskRightSide">
             <button class="controlBTN editbutton">✎</button>
             <button class="controlBTN deletebutton">🗑</button>
           </div>
-        </div>
+        </div> -->
 
-        <div class="taskchild">
-          <div class="taskLeftSide">
-            <input type="checkbox" />
-            <p class="done">Test Task</p>
-          </div>
-          <div class="taskRightSide">
-            <button class="controlBTN editbutton">✎</button>
-            <button class="controlBTN deletebutton">🗑</button>
-          </div>
-        </div>
+      </div>
+      <!-- Tab Two for Active Tasks -->
+      <div class="tasksparent tab2">
+        <p>No Tasks Available at The mMoment</p>
+      </div>
+      <!-- Tab Three for Completed Tasks -->
+      <div class="tasksparent tab3">
+        <p>No Tasks Available at The mMoment</p>
       </div>
       <div class="taskfooter">
         <div class="footerinfo">
-          <p style="color: gray; font-size: 12px;">
+          <p style="color: gray; font-size: 12px">
             <span class="tasknumber">0</span>
             active •
             <span class="totaltasks">45</span>
@@ -66,11 +66,13 @@
           </p>
         </div>
         <div class="tabsbuttons">
-            <button class="controlBTN tabBTN">All</button>
-            <button class="controlBTN tabBTN">Active</button>
-            <button class="controlBTN tabBTN">Completed</button>
+          <button class="controlBTN tabBTN tabBtn1">All</button>
+          <button class="controlBTN tabBTN tabBtn2">Active</button>
+          <button class="controlBTN tabBTN tabBtn3">Completed</button>
         </div>
-        <p style="color: gray; font-size: 12px;">Tip: double-click a task to edit it</p>
+        <p style="color: gray; font-size: 12px">
+          Tip: double-click a task to edit it
+        </p>
       </div>
     </div>
     <script src="./script.js"></script>
